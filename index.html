@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Been Missing You...😢💌</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <img src="R.png" class="balloon" alt="Balloon">
+  <div class="text" id="letsStartText">Let's Start💫</div>
+
+  <div class="container initial-msg" id="mainContent">
+    <h2>If you're free for a few minutes and genuinely interested... let's take a tiny moment 😊🤥😌💭.</h2>
+    <button class="buttons initial-btn" onclick="openNextContainer('rotate-msg')">Continue →</button>
+  </div>
+
+  <div class="container rotate-msg">
+    <h2>Before we begin, could you please rotate your phone? 😊📱🔄️<br> I promise it’ll be worth it. 💖. And forgive me for the color combinations — if I had more time, I’d make them better 😊😁</h2>
+    <button class="buttons rotate-btn" onclick="openNextContainer('welcome-msg')">Next →</button>
+  </div>
+
+  <div class="container welcome-msg">
+    <h2>A warm welcome 🤗 to the most crazy, unpredictable, selfish, dramatic, ignoring, psycho (and everything in between) → person I know! 🍻🎉</h2>
+    <button class="buttons welcome-btn" onclick="openNextContainer('first-msg')">Welcome!!!</button>
+  </div>
+
+  <div class="container first-msg">
+    <h2>First Message</h2>
+    <p>You don’t need to respond to anything after this...  
+    These are just a few thoughts that have been on my heart for the past few days 😭😭  
+    That’s all... no pressure, no expectations.</p>
+    <button class="buttons first-btn" onclick="openNextContainer('second-msg')">Move →</button>
+  </div>
+
+  <div class="container second-msg">
+    <h2>Second Message</h2>
+    <p>Before moving forward... just one little thing 🫣</p>
+    <p>Please enter the password below 🔐</p>
+    <span><em>Hint: It might be a special birth date... 🎂</em></span><br><br>
+    <input type="date" id="password-date" />
+    <b id="error-msg-password" style="color: crimson;"></b>
+    <button class="buttons second-btn" onclick="checkPassword('third-msg')">Submit</button>
+  </div>
+
+  <div class="container third-msg">
+    <h2>🥺 This is how I’ve been feeling… for days, now and before.</h2>
+    <p>I honestly feel like crying 😭.  It's been so long since I last heard “Valleeee” 🥺😓. And I just keep wondering... why? What changed?</p>
+    <p>Please enter the correct password and click submit.</p>
+    <span><em>Hint: It’s something I’ve been craving for… 💭</em></span><br><br>
+    <input type="text" id="craving-input">
+    <b id="error-msg-craving" style="color: crimson;"></b>
+    <button class="buttons third-btn" onclick="checkCraving('fourth-msg')">Submit</button>
+  </div>
+
+  <div class="container fourth-msg">
+    <h2>You got it. Congrats 🎉🎆</h2> 
+    <p>I know you might be busy with work, and I truly understand that. But I want to share something from my side...</p>
+    <p>I’ve never been like that — not before, not now. Even on my busiest days, I would put my work aside the moment you needed me — even if it was just for a few minutes.</p>
+    <p>Over time, I started noticing that you mostly come to me when you have no work… or when you're bored. And maybe I’m wrong — I really hope I am — but deep down, I don’t feel that I am.</p> 
+    <p>I’m not expecting replies anymore, or for things to go back to how they used to be. Maybe my words have felt uninteresting lately, but that’s only because it hurt… to feel ignored and only remembered when convenient. That’s why I sometimes act like I’m not interested 🥺😑.</p>
+    <button class="buttons fourth-btn" onclick="openNextContainer('fifth-msg')">Next →</button>
+  </div>
+
+  <div class="container fifth-msg">
+    <h2>Sorry... if these messages felt boring or too much 😌</h2>
+    <p>I used to check my phone every few seconds... hoping I’d see a notification from you. But most of the time — there was nothing 😑.</p>
+    <p>And it’s okay. Really. I get it. Maybe you’re busy. Maybe things changed. I’m trying to understand.</p>
+    <p>😭😭😭</p>
+    <p>The truth is... when I feel ignored, I get hurt. And in that hurt, I sometimes act angry. You might not understand that part — and maybe you believe it's not your fault 🥱🫤.</p>
+    <p>You may even ask, “Then why didn’t you text first?” The answer? Because when I do, the replies often come so late... that it feels like I don’t even matter. Waiting hours… feeling like nothing… it's painful 🥺😖🙁. And honestly — that's how it’s been, minute by minute.</p>
+    <button class="buttons fifth-btn" onclick="openNextContainer('sixth-msg')">Next →</button>
+  </div>
+
+  <div class="container sixth-msg">
+    <h2>One Tiny Test… 🌍💫</h2>
+    <p>This one’s special. Think carefully.</p>
+    <span><em>Hint: It's a date... connected to a place we once spoke about. 📍🗓️</em></span><br><br>
+    <input type="date" id="place-date" />
+    <b id="error-msg-place" style="color: crimson;"></b>
+    <button class="buttons sixth-btn" onclick="checkPlaceDate('seventh-msg')">Submit</button>
+  </div>
+
+  <div class="container seventh-msg">
+    <h2>🧐🫢</h2>
+    <p>When I felt ignored, I’d tell myself to avoid you — just like you seemed to avoid me. But the moment I saw even a single message from you... I’d melt in seconds. I would reply — pretending to be angry — but deep inside, I was happy that you remembered me. 😖😊</p>
+    <p>Believe it or not, there’s so much I want to say… but for some reason, I just can’t. I don’t even know why.</p>
+    <p>Even while doing my tasks, my mind would be lost — thinking about the texts I was hoping for… craving for.   I’m not saying you should have texted me… I’m just sharing what’s been going on in my heart.</p>
+    <p>I waited... and waited... and waited. But slowly, I’ve come to accept that I won’t receive those messages anymore. That’s why I wanted to express all this to you — but I couldn’t say it directly. So... I made this instead.</p>
+    <p>I may not be as good as you in many things… but this… this little thing — I made just for you. 🧡</p>
+    <button class="buttons seventh-btn" onclick="openNextContainer('eighth-msg')">Next →</button>
+  </div>
+
+  <div class="container eighth-msg">
+    <h2>Current face 🥺</h2>
+    <p>I started making this around 8 PM… and now, it’s done. Even while working on it, my eyes were filling with tears 💯💯💯</p>
+    <p>Maybe someday in the future, we’ll both look back at these messages and think — "how silly, how crazy this all was."</p>
+    <p>But right now… this is how I truly feel. And have been feeling… for many days. I just wanted you to know what’s really going on inside me.</p>
+    <button class="buttons eighth-btn" onclick="openNextContainer('nineth-msg')">Next →</button>
+  </div>
+
+  <div class="container nineth-msg">
+    <h2>Just One More... 💭</h2>
+    <p>This one’s special. Think with your heart 💗</p>
+    <span><em>Hint: It’s a word you used to call me —  sometimes playfully, sometimes when you were a little annoyed...  and even during those silly happy moments too. 😌</em>
+    </span><br><br>
+    <input type="text" id="nickname-input" />
+    <b id="error-msg-nickname" style="color: crimson;"></b>
+    <button class="buttons nineth-btn" onclick="checkNickname('tenth-msg')">Submit</button>
+  </div>
+
+  <div class="container tenth-msg">
+    <h2>Congratulations on making it through… 💫💖</h2>
+    <h2>This is the final card — maybe you're a little happy it’s over? 😂</h2>
+    <p>I know I’ve shared a lot — thoughts, emotions, even anger…  and most of it came from a place of feeling ignored, avoided…  or just missing the connection we once had.</p>
+    <p>You might have thought I was lost in my projects. But honestly… I wasn’t. I was waiting. Just waiting… for a message. For presence.</p>
+    <p>That’s it. No expectations anymore. Just shared what my heart held for so long.</p>
+    <p>So now — stay happy, always. Good luck with everything. And… Byeee 😖.....</p>
+    <p>Missing your presence... always 🫴🏾🫂🤍🐭➿</p>
+    <button class="buttons tenth-btn" onclick="closeSite()">The End 💌 </button>
+  </div>
+
+</body>
+</html>

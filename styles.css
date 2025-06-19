@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+  height: 100vh;
+  background: #e4aab7;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+p {
+  font-family: cursive;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  animation: riseAndFade 4s ease-in forwards;
+}
+
+@keyframes riseAndFade {
+  0% { bottom: -200px; opacity: 1; }
+  100% { bottom: 100vh; opacity: 0; }
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  font-weight: bold;
+  color: darkblue;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.container {
+  display: none;
+  opacity: 0;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 4px 4px 16px rgba(51, 51, 51, 0.7);
+  cursor: pointer;
+  width: 500px;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.container.fade-in-zoom {
+  animation: fadeInZoom 1s ease forwards;
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.container:hover {
+  transform: translate(-50%, -50%);
+  box-shadow: 8px 8px 16px rgba(51, 51, 51, 0.7);
+}
+
+.buttons {
+  margin: 20px auto auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  opacity: 0.7;
+}
+
+.initial-msg h2 {
+  color: #800080;
+}
+
+.initial-btn {
+  color: #ff6b81;
+  background-color: #c1f8d7;
+  border: 3px solid #ff6b81;
+}
+
+.rotate-msg h2 {
+    color:#f5092c;
+}
+
+.rotate-btn {
+  color: #e000e0;
+  background-color: #a0f1bf;
+  border: 3px solid #e000e0;
+}
+
+.welcome-msg h2 {
+    color:darkblue;
+}
+
+.welcome-btn {
+    color: #ff0000;
+    background-color: #bfe0e1;
+    border: 3px solid #ff0000;
+}
+
+.first-msg h2 {
+    color: #ff0000;
+}
+
+.first-msg p {
+    font-size: 0.9rem;
+    color:cadetblue;
+}
+
+.first-btn {
+    color:#483d8b;
+    background-color:#f0d8d1;
+    border: 3px solid #483d8b;
+}
+
+.second-msg h2 {
+    color:#014343;
+}
+
+.second-msg p, .second-msg {
+    color:#a83279;
+}
+
+.second-btn {
+  color: #6a0572;
+  background-color: #fcd1d1;
+  border: 3px solid #6a0572;
+}
+
+.third-msg h2 {
+    color:#008000;
+}
+
+.third-msg p, .third-msg span {
+    color:#0d066e;
+}
+
+.third-btn {
+  color: #d2691e;
+  background-color: #fff8dc;
+  border: 3px solid #d2691e;
+}
+
+.fourth-msg p {
+    color:#4b0082;
+}
+
+.fourth-btn {
+  color: #39925b;
+  background-color: #dff7ff;
+  border: 3px solid #39925b;
+}
+
+.fifth-msg h2 {
+    color:#e36a32;
+}
+
+.fifth-msg p {
+    color:#228b22;
+}
+
+.fifth-btn {
+  color: #a83279;
+  background-color: #ffdeeb;
+  border: 3px solid #a83279;
+}
+
+.sixth-msg p, .sixth-msg span {
+    color:#a83279;
+}
+
+.sixth-btn {
+  color: #008000;
+  background-color: #d8fdd8;
+  border: 3px solid #008000;
+}
+
+.seventh-msg p {
+    color:darkslateblue;
+}
+
+.seventh-btn {
+  color: #a0522d;
+  background-color: #ffefd5;
+  border: 3px solid #a0522d;
+}
+
+.eighth-msg h2 {
+    color:#5805a6
+}
+
+.eighth-msg p {
+    color:#e22483;
+}
+.eighth-btn {
+  color: #1e90ff;
+  background-color: #e0f0ff;
+  border: 3px solid #1e90ff;
+}
+
+.nineth-msg h2 {
+    color:#a0522d;
+}
+
+.nineth-msg p, .nineth-msg span {
+    color: royalblue;
+}
+
+.nineth-btn {
+  color: #c71585;
+  background-color: #ffe0f0;
+  border: 3px solid #c71585;
+}
+
+.tenth-msg h2 {
+    color: #0d066e;
+}
+
+.tenth-msg p {
+    color: #ff69b4;
+}
+
+.tenth-btn {
+  color: #007acc;
+  background-color: #f3f3f5;
+  border: 3px solid #007acc;
+}
+
+input[type="text"],
+input[type="date"] {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#error-msg {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
